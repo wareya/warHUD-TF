@@ -20,6 +20,28 @@
 		"delta_lifetime"		"1.5"
 		"delta_item_font"		"HudFontMedium"
 		
+		"TimePanelBG"
+		{
+			"ControlName"	"CTFImagePanel"
+			"fieldName"		"TimePanelBG"
+			"xpos"			"30"
+			"ypos"			"8"
+			"zpos"			"2"
+			"wide"			"40"
+			"tall"			"15"
+			"tall_minmode"	"13"
+			"visible"		"1"
+			"enabled"		"1"
+			
+			"image"			"../hud/color_panel_brown"
+			"scaleImage"	"1"
+			
+			"teambg_1"		"../hud/color_panel_brown"
+			"teambg_2"		"../hud/color_panel_red"
+			"teambg_3"		"../hud/color_panel_blu"
+			"src_corner_height"		"40"
+			"src_corner_width"		"40"
+		}
 		"TimePanelValue"
 		{
 			"ControlName"	"CExLabel"

@@ -1,27 +1,5 @@
 "Resource/UI/HudObjectiveTimePanel.res"
 {	
-	"TimePanelBG"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"TimePanelBG"
-		"xpos"			"30"
-		"ypos"			"8"
-		"zpos"			"2"
-		"wide"			"40"
-		"tall"			"15"
-		"tall_minmode"	"13"
-		"visible"		"1"
-		"enabled"		"1"
-		
-		"image"			"../hud/color_panel_brown"
-		"scaleImage"	"1"
-		
-		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		"src_corner_height"		"40"
-		"src_corner_width"		"40"
-	}
 	"TimePanelProgressBar"
 	{
 		"ControlName"		"CTFProgressBar"
@@ -72,7 +50,6 @@
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
-		
 		"visible"		"0"
 		"enabled"		"0"
 	}
@@ -106,7 +83,6 @@
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
-		
 		"visible"		"0"
 		"enabled"		"0"
 	}
@@ -140,7 +116,6 @@
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
-		
 		"visible"		"0"
 		"enabled"		"0"
 	}	
@@ -177,7 +152,6 @@
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
-		
 		"visible"		"0"
 		"enabled"		"0"
 	}	
