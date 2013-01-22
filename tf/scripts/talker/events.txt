@@ -1,0 +1,643 @@
+//------------------------------------------------------------------------------------------------------------------------
+//CRITERIA
+//------------------------------------------------------------------------------------------------------------------------
+Criterion "NotMerasmusHideCooldown" "worldMerasmusHideCooldown" "!=1" "required" weight 100
+Criterion "IsMerasmusHiding"	"IsMerasmusHiding" "1" "required" weight 100
+Criterion	"IsZombieCostume"		"IsZombieCostume"	"1" "required" weight 100
+Criterion "soldierNotZombieNoises" "soldierZombieNoises" "!=1" "required" weight 100
+Criterion "scoutNotZombieNoises" "scoutZombieNoises" "!=1" "required" weight 100
+criterion "ConceptMagicBigHead" "Concept" "TLK_MAGIC_BIGHEAD" required
+criterion "ConceptMagicSmallHead" "Concept" "TLK_MAGIC_SMALLHEAD" required
+criterion "ConceptMagicGravity" "Concept" "TLK_MAGIC_GRAVITY" required
+criterion "ConceptMagicGood" "Concept" "TLK_MAGIC_GOOD" required
+criterion "ConceptMagicDance" "Concept" "TLK_MAGIC_DANCE" required
+criterion "ConceptHalloweenPlayerPitFall" "Concept" "HalloweenLongFall" required
+//------------------------------------------------------------------------------------------------------------------------
+
+Response PlayerFairyNoiseHeavy
+{
+	scene	"scenes/player/heavy/low/4766.vcd"
+	scene	"scenes/player/heavy/low/4767.vcd"
+	scene	"scenes/player/heavy/low/4768.vcd"
+	scene	"scenes/player/heavy/low/4769.vcd"
+	scene	"scenes/player/heavy/low/4770.vcd"
+	scene	"scenes/player/heavy/low/4771.vcd"
+	scene	"scenes/player/heavy/low/4772.vcd"
+	scene	"scenes/player/heavy/low/4775.vcd"
+	scene	"scenes/player/heavy/low/4776.vcd"
+	scene	"scenes/player/heavy/low/4777.vcd"
+	scene	"scenes/player/heavy/low/4778.vcd"
+	scene	"scenes/player/heavy/low/4779.vcd"
+	scene	"scenes/player/heavy/low/4780.vcd"
+	scene	"scenes/player/heavy/low/4781.vcd"
+	scene	"scenes/player/heavy/low/4782.vcd"
+	scene	"scenes/player/heavy/low/4783.vcd"
+	scene	"scenes/player/heavy/low/4784.vcd"
+}
+Rule PlayerFairyNoiseHeavy
+{
+	criteria ConceptPlayerExpression IsHeavy IsFairyHeavy HeavyNotFairyNoises 50PercentChance
+	applycontext "HeavyFairyNoises:1:90"
+	Response PlayerFairyNoiseHeavy
+}
+
+Response PlayerBattleCryFairyHeavy
+{
+	scene	"scenes/player/heavy/low/4766.vcd"
+	scene	"scenes/player/heavy/low/4767.vcd"
+	scene	"scenes/player/heavy/low/4769.vcd"
+	scene	"scenes/player/heavy/low/4775.vcd"
+}
+Rule PlayerBattleCryFairyHeavy
+{
+	criteria ConceptPlayerBattleCry IsHeavy IsFairyHeavy
+	Response PlayerBattleCryFairyHeavy
+}
+
+Response KilledPlayerHeavyFairy
+{
+	scene	"scenes/player/heavy/low/4773.vcd"
+	scene	"scenes/player/heavy/low/4774.vcd"
+	scene	"scenes/player/heavy/low/4778.vcd"
+}
+Rule KilledPlayerHeavyFairy
+{
+	criteria ConceptKilledPlayer IsHeavy IsFairyHeavy HeavyNotKillSpeech 20PercentChance
+	applycontext "HeavyKillSpeech:1:15"
+	Response KilledPlayerHeavyFairy
+}
+
+Response PlayerRoundStartHeavyFairy
+{
+	scene	"scenes/player/heavy/low/4766.vcd"
+	scene	"scenes/player/heavy/low/4767.vcd"
+	scene	"scenes/player/heavy/low/4769.vcd"
+	scene	"scenes/player/heavy/low/4775.vcd"
+}
+Rule PlayerRoundStartHeavyFairy
+{
+	criteria ConceptPlayerRoundStart IsHeavy IsFairyHeavy
+	applycontext "HeavyFairyNoises:1:30"
+	Response PlayerRoundStartHeavyFairy
+}
+
+Response scoutMerasmusHideTaunt
+{
+	scene	"scenes/player/scout/low/4478.vcd"
+	scene	"scenes/player/scout/low/4482.vcd"
+	scene	"scenes/player/scout/low/4487.vcd"
+	scene	"scenes/player/scout/low/4489.vcd"
+	scene	"scenes/player/scout/low/4491.vcd"
+	scene	"scenes/player/scout/low/4492.vcd"
+	scene	"scenes/player/scout/low/4493.vcd"
+	scene	"scenes/player/scout/low/4494.vcd"
+	scene	"scenes/player/scout/low/4496.vcd"
+	scene	"scenes/player/scout/low/4497.vcd"
+	scene	"scenes/player/scout/low/4498.vcd"
+	scene	"scenes/player/scout/low/4695.vcd"
+	scene	"scenes/player/scout/low/4698.vcd"
+	scene	"scenes/player/scout/low/4699.vcd"
+	scene	"scenes/player/scout/low/4700.vcd"
+	scene	"scenes/player/scout/low/4701.vcd"
+	scene	"scenes/player/scout/low/4702.vcd"
+}
+Rule scoutMerasmusHideTaunt
+{
+	criteria ConceptPlayerExpression Isscout IsMerasmusHiding NotMerasmusHideCooldown 20PercentChance
+	applycontext "MerasmusHideCooldown:1:30"
+	applycontexttoworld
+	Response scoutMerasmusHideTaunt
+}
+
+Response heavyMerasmusHideTaunt
+{
+	scene	"scenes/player/heavy/low/4737.vcd"
+	scene	"scenes/player/heavy/low/4738.vcd"
+	scene	"scenes/player/heavy/low/4739.vcd"
+	scene	"scenes/player/heavy/low/4741.vcd"
+	scene	"scenes/player/heavy/low/4742.vcd"
+}
+Rule heavyMerasmusHideTaunt
+{
+	criteria ConceptPlayerExpression Isheavy IsMerasmusHiding NotMerasmusHideCooldown 20PercentChance
+	applycontext "MerasmusHideCooldown:1:30"
+	applycontexttoworld
+	Response heavyMerasmusHideTaunt
+}
+
+Response demomanMerasmusHideTaunt
+{
+	scene	"scenes/player/demoman/low/4575.vcd"
+	scene	"scenes/player/demoman/low/4576.vcd"
+	scene	"scenes/player/demoman/low/4577.vcd"
+	scene	"scenes/player/demoman/low/4578.vcd"
+	scene	"scenes/player/demoman/low/4579.vcd"
+	scene	"scenes/player/demoman/low/4580.vcd"
+	scene	"scenes/player/demoman/low/4581.vcd"
+	scene	"scenes/player/demoman/low/4582.vcd"
+	scene	"scenes/player/demoman/low/4583.vcd"
+	scene	"scenes/player/demoman/low/5454.vcd"
+}
+Rule demomanMerasmusHideTaunt
+{
+	criteria ConceptPlayerExpression Isdemoman IsMerasmusHiding NotMerasmusHideCooldown 20PercentChance
+	applycontext "MerasmusHideCooldown:1:30"
+	applycontexttoworld
+	Response demomanMerasmusHideTaunt
+}
+
+Response medicMerasmusHideTaunt
+{
+	scene	"scenes/player/medic/low/4643.vcd"
+	scene	"scenes/player/medic/low/4644.vcd"
+	scene	"scenes/player/medic/low/4645.vcd"
+	scene	"scenes/player/medic/low/4646.vcd"
+	scene	"scenes/player/medic/low/4647.vcd"
+}
+Rule medicMerasmusHideTaunt
+{
+	criteria ConceptPlayerExpression Ismedic IsMerasmusHiding NotMerasmusHideCooldown 20PercentChance
+	applycontext "MerasmusHideCooldown:1:30"
+	applycontexttoworld
+	Response medicMerasmusHideTaunt
+}
+
+Response soldierMerasmusHideTaunt
+{
+	scene	"scenes/player/soldier/low/4499.vcd"
+	scene	"scenes/player/soldier/low/4500.vcd"
+	scene	"scenes/player/soldier/low/4506.vcd"
+	scene	"scenes/player/soldier/low/4507.vcd"
+	scene	"scenes/player/soldier/low/4509.vcd"
+	scene	"scenes/player/soldier/low/4510.vcd"
+	scene	"scenes/player/soldier/low/4511.vcd"
+	scene	"scenes/player/soldier/low/4512.vcd"
+	scene	"scenes/player/soldier/low/4513.vcd"
+	scene	"scenes/player/soldier/low/4515.vcd"
+	scene	"scenes/player/soldier/low/4516.vcd"
+	scene	"scenes/player/soldier/low/4517.vcd"
+	scene	"scenes/player/soldier/low/4522.vcd"
+	scene	"scenes/player/soldier/low/4523.vcd"
+	scene	"scenes/player/soldier/low/4524.vcd"
+	scene	"scenes/player/soldier/low/4525.vcd"
+	scene	"scenes/player/soldier/low/4526.vcd"
+	scene	"scenes/player/soldier/low/4527.vcd"
+	scene	"scenes/player/soldier/low/4528.vcd"
+	scene	"scenes/player/soldier/low/4529.vcd"
+	scene	"scenes/player/soldier/low/4530.vcd"
+	scene	"scenes/player/soldier/low/4531.vcd"
+	scene	"scenes/player/soldier/low/4533.vcd"
+	scene	"scenes/player/soldier/low/4534.vcd"
+	scene	"scenes/player/soldier/low/4535.vcd"
+	scene	"scenes/player/soldier/low/4536.vcd"
+	scene	"scenes/player/soldier/low/4537.vcd"
+	scene	"scenes/player/soldier/low/4538.vcd"
+	scene	"scenes/player/soldier/low/4539.vcd"
+}
+Rule soldierMerasmusHideTaunt
+{
+	criteria ConceptPlayerExpression Issoldier IsMerasmusHiding NotMerasmusHideCooldown 20PercentChance
+	applycontext "MerasmusHideCooldown:1:30"
+	applycontexttoworld
+	Response soldierMerasmusHideTaunt
+}
+
+Response scoutHalloweenMerasmusPitFall
+{
+	scene	"scenes/player/scout/low/4455.vcd"
+	scene	"scenes/player/scout/low/4456.vcd"
+	scene	"scenes/player/scout/low/4704.vcd"
+}
+Rule scoutHalloweenMerasmusPitFall
+{
+	criteria ConceptHalloweenPlayerPitFall Isscout
+	Response scoutHalloweenMerasmusPitFall
+}
+
+Response heavyHalloweenMerasmusPitFall
+{
+	scene	"scenes/player/heavy/low/4743.vcd"
+}
+Rule heavyHalloweenMerasmusPitFall
+{
+	criteria ConceptHalloweenPlayerPitFall Isheavy
+	Response heavyHalloweenMerasmusPitFall
+}
+
+Response demomanHalloweenMerasmusPitFall
+{
+	scene	"scenes/player/demoman/low/4585.vcd"
+}
+Rule demomanHalloweenMerasmusPitFall
+{
+	criteria ConceptHalloweenPlayerPitFall Isdemoman
+	Response demomanHalloweenMerasmusPitFall
+}
+
+Response medicHalloweenMerasmusPitFall
+{
+	scene	"scenes/player/medic/low/4651.vcd"
+}
+Rule medicHalloweenMerasmusPitFall
+{
+	criteria ConceptHalloweenPlayerPitFall Ismedic
+	Response medicHalloweenMerasmusPitFall
+}
+
+Response spyHalloweenMerasmusPitFall
+{
+	scene	"scenes/player/spy/low/4705.vcd"
+	scene	"scenes/player/spy/low/4709.vcd"
+}
+Rule spyHalloweenMerasmusPitFall
+{
+	criteria ConceptHalloweenPlayerPitFall Isspy
+	Response spyHalloweenMerasmusPitFall
+}
+
+Response soldierHalloweenMerasmusPitFall
+{
+	scene	"scenes/player/soldier/low/4540.vcd"
+	scene	"scenes/player/soldier/low/4541.vcd"
+}
+Rule soldierHalloweenMerasmusPitFall
+{
+	criteria ConceptHalloweenPlayerPitFall Issoldier
+	Response soldierHalloweenMerasmusPitFall
+}
+
+Response scoutZombieCostume
+{
+	scene	"scenes/player/scout/low/4457.vcd"
+	scene	"scenes/player/scout/low/4458.vcd"
+	scene	"scenes/player/scout/low/4459.vcd"
+	scene	"scenes/player/scout/low/4460.vcd"
+	scene	"scenes/player/scout/low/4703.vcd"
+}
+Rule scoutZombieCostume
+{
+	criteria ConceptPlayerExpression Isscout IsZombieCostume scoutNotZombieNoises 20PercentChance
+	applycontext "scoutZombieNoises:1:30"
+	Response scoutZombieCostume
+}
+
+Response soldierZombieCostume
+{
+	scene	"scenes/player/soldier/low/4562.vcd"
+	scene	"scenes/player/soldier/low/4563.vcd"
+	scene	"scenes/player/soldier/low/4729.vcd"
+	scene	"scenes/player/soldier/low/4730.vcd"
+}
+Rule soldierZombieCostume
+{
+	criteria ConceptPlayerExpression Issoldier IsZombieCostume soldierNotZombieNoises 20PercentChance
+	applycontext "soldierZombieNoises:1:30"
+	Response soldierZombieCostume
+}
+
+Response scoutPlayerBattleCryZombie
+{
+	scene	"scenes/player/scout/low/4457.vcd"
+	scene	"scenes/player/scout/low/4458.vcd"
+	scene	"scenes/player/scout/low/4459.vcd"
+	scene	"scenes/player/scout/low/4460.vcd"
+	scene	"scenes/player/scout/low/4703.vcd"
+}
+Rule scoutPlayerBattleCryZombie
+{
+	criteria ConceptPlayerBattleCry Isscout IsZombieCostume
+	applycontext "scoutZombieNoises:1:30"
+	Response scoutPlayerBattleCryZombie
+}
+
+Response soldierPlayerBattleCryZombie
+{
+	scene	"scenes/player/soldier/low/4562.vcd"
+	scene	"scenes/player/soldier/low/4563.vcd"
+	scene	"scenes/player/soldier/low/4729.vcd"
+	scene	"scenes/player/soldier/low/4730.vcd"
+}
+Rule soldierPlayerBattleCryZombie
+{
+	criteria ConceptPlayerBattleCry Issoldier IsZombieCostume
+	applycontext "soldierZombieNoises:1:30"
+	Response soldierPlayerBattleCryZombie
+}
+
+Response scoutBigHeadReaction
+{
+	scene	"scenes/player/scout/low/4472.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/scout/low/4686.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/scout/low/4689.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/scout/low/4692.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/scout/low/4693.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/scout/low/4694.vcd" predelay "3.5, 6.5"
+}
+Rule scoutBigHeadReaction
+{
+	criteria ConceptMagicBigHead Isscout
+	Response scoutBigHeadReaction
+}
+
+Response heavyBigHeadReaction
+{
+	scene	"scenes/player/heavy/low/4744.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/heavy/low/4750.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/heavy/low/5456.vcd" predelay "3.5, 6.5"
+}
+Rule heavyBigHeadReaction
+{
+	criteria ConceptMagicBigHead Isheavy
+	Response heavyBigHeadReaction
+}
+
+Response demomanBigHeadReaction
+{
+	scene	"scenes/player/demoman/low/4586.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/demoman/low/4589.vcd" predelay "3.5, 6.5"
+}
+Rule demomanBigHeadReaction
+{
+	criteria ConceptMagicBigHead Isdemoman
+	Response demomanBigHeadReaction
+}
+
+Response medicBigHeadReaction
+{
+	scene	"scenes/player/medic/low/4652.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/medic/low/4653.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/medic/low/4660.vcd" predelay "3.5, 6.5"
+}
+Rule medicBigHeadReaction
+{
+	criteria ConceptMagicBigHead Ismedic
+	Response medicBigHeadReaction
+}
+
+Response spyBigHeadReaction
+{
+	scene	"scenes/player/spy/low/4711.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/spy/low/4712.vcd" predelay "3.5, 6.5"
+}
+Rule spyBigHeadReaction
+{
+	criteria ConceptMagicBigHead Isspy
+	Response spyBigHeadReaction
+}
+
+Response soldierBigHeadReaction
+{
+	scene	"scenes/player/soldier/low/4546.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/soldier/low/4547.vcd" predelay "3.5, 6.5"
+	scene	"scenes/player/soldier/low/4728.vcd" predelay "3.5, 6.5"
+}
+Rule soldierBigHeadReaction
+{
+	criteria ConceptMagicBigHead Issoldier
+	Response soldierBigHeadReaction
+}
+
+Response scoutSmallHeadReaction
+{
+	scene	"scenes/player/scout/low/4464.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4468.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4473.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4475.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4687.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4688.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4692.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4693.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4694.vcd" predelay "4.5, 6.5"
+}
+Rule scoutSmallHeadReaction
+{
+	criteria ConceptMagicSmallHead Isscout
+	Response scoutSmallHeadReaction
+}
+
+Response heavySmallHeadReaction
+{
+	scene	"scenes/player/heavy/low/4745.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/heavy/low/4749.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/heavy/low/4751.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/heavy/low/4750.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/heavy/low/5456.vcd" predelay "4.5, 6.5"
+}
+Rule heavySmallHeadReaction
+{
+	criteria ConceptMagicSmallHead Isheavy
+	Response heavySmallHeadReaction
+}
+
+Response demomanSmallHeadReaction
+{
+	scene	"scenes/player/demoman/low/4587.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4588.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4590.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4592.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4586.vcd" predelay "4.5, 6.5"
+}
+Rule demomanSmallHeadReaction
+{
+	criteria ConceptMagicSmallHead Isdemoman
+	Response demomanSmallHeadReaction
+}
+
+Response medicSmallHeadReaction
+{
+	scene	"scenes/player/medic/low/4654.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4656.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4652.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4660.vcd" predelay "4.5, 6.5"
+}
+Rule medicSmallHeadReaction
+{
+	criteria ConceptMagicSmallHead Ismedic
+	Response medicSmallHeadReaction
+}
+
+Response spySmallHeadReaction
+{
+	scene	"scenes/player/spy/low/4710.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/spy/low/4713.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/spy/low/4715.vcd" predelay "4.5, 6.5"
+}
+Rule spySmallHeadReaction
+{
+	criteria ConceptMagicSmallHead Isspy
+	Response spySmallHeadReaction
+}
+
+Response soldierSmallHeadReaction
+{
+	scene	"scenes/player/soldier/low/4548.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4553.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4728.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4546.vcd" predelay "4.5, 6.5"
+}
+Rule soldierSmallHeadReaction
+{
+	criteria ConceptMagicSmallHead Issoldier
+	Response soldierSmallHeadReaction
+}
+
+Response scoutGravityReaction
+{
+	scene	"scenes/player/scout/low/4469.vcd" predelay "4.5, 6.5"
+}
+Rule scoutGravityReaction
+{
+	criteria ConceptMagicGravity Isscout 50PercentChance
+	Response scoutGravityReaction
+}
+
+Response heavyGravityReaction
+{
+	scene	"scenes/player/heavy/low/4748.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/heavy/low/4752.vcd" predelay "4.5, 6.5"
+}
+Rule heavyGravityReaction
+{
+	criteria ConceptMagicGravity Isheavy 50PercentChance
+	Response heavyGravityReaction
+}
+
+Response demomanGravityReaction
+{
+	scene	"scenes/player/demoman/low/4591.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4593.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4596.vcd" predelay "4.5, 6.5"
+}
+Rule demomanGravityReaction
+{
+	criteria ConceptMagicGravity Isdemoman 50PercentChance
+	Response demomanGravityReaction
+}
+
+Response medicGravityReaction
+{
+	scene	"scenes/player/medic/low/4657.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4663.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4656.vcd" predelay "4.5, 6.5"
+}
+Rule medicGravityReaction
+{
+	criteria ConceptMagicGravity Ismedic 50PercentChance
+	Response medicGravityReaction
+}
+
+Response soldierGravityReaction
+{
+	scene	"scenes/player/soldier/low/4556.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4557.vcd" predelay "4.5, 6.5"
+}
+Rule soldierGravityReaction
+{
+	criteria ConceptMagicGravity Issoldier 50PercentChance
+	Response soldierGravityReaction
+}
+
+Response scoutGoodMagicReaction
+{
+	scene	"scenes/player/scout/low/4477.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4479.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4480.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4481.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4483.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4482.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4497.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4699.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/scout/low/4702.vcd" predelay "4.5, 6.5"
+}
+Rule scoutGoodMagicReaction
+{
+	criteria ConceptMagicGood Isscout 50PercentChance
+	Response scoutGoodMagicReaction
+}
+
+Response heavyGoodMagicReaction
+{
+	scene	"scenes/player/heavy/low/4754.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/heavy/low/4755.vcd" predelay "4.5, 6.5"
+}
+Rule heavyGoodMagicReaction
+{
+	criteria ConceptMagicGood Isheavy 50PercentChance
+	Response heavyGoodMagicReaction
+}
+
+Response demomanGoodMagicReaction
+{
+	scene	"scenes/player/demoman/low/4597.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4598.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4599.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4600.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4576.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4577.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4578.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4579.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/demoman/low/4580.vcd" predelay "4.5, 6.5"
+}
+Rule demomanGoodMagicReaction
+{
+	criteria ConceptMagicGood Isdemoman 50PercentChance
+	Response demomanGoodMagicReaction
+}
+
+Response medicGoodMagicReaction
+{
+	scene	"scenes/player/medic/low/4649.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4664.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4665.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4666.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4731.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4732.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/medic/low/4733.vcd" predelay "4.5, 6.5"
+}
+Rule medicGoodMagicReaction
+{
+	criteria ConceptMagicGood Ismedic 50PercentChance
+	Response medicGoodMagicReaction
+}
+
+Response soldierGoodMagicReaction
+{
+	scene	"scenes/player/soldier/low/4564.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4565.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4566.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4567.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4522.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4523.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4525.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4526.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4527.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4528.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4529.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4530.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4531.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4533.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4534.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4535.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4536.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4537.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4538.vcd" predelay "4.5, 6.5"
+	scene	"scenes/player/soldier/low/4539.vcd" predelay "4.5, 6.5"
+}
+Rule soldierGoodMagicReaction
+{
+	criteria ConceptMagicGood Issoldier 50PercentChance
+	Response soldierGoodMagicReaction
+}
+
+Response soldierDanceMagicReaction
+{
+	scene	"scenes/player/soldier/low/4550.vcd" predelay "3.0"
+	scene	"scenes/player/soldier/low/4558.vcd" predelay "3.0"
+	scene	"scenes/player/soldier/low/4559.vcd" predelay "3.0"
+}
+Rule soldierDanceMagicReaction
+{
+	criteria ConceptMagicDance Issoldier 50PercentChance
+	Response soldierDanceMagicReaction
+}
+
