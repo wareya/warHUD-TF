@@ -1,5 +1,5 @@
 warHUD is a custom HUD modification for TF2, based on the legacy of RevanXP's HUD.
-Its main design goal show things as bluntly yet mellow as possible.
+Its main design goal show things as bluntly yet mellow as possible. That is, things should be obvious and easy to look for, but never annoy your attention.
 
 Install:
 
