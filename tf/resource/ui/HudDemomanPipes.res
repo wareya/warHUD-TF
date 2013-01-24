@@ -112,54 +112,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"NoPipesPresentPanel"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"1"
-		"wide"			"120"
-		"tall"			"50"
-		"visible"		"1"
-		
-		"PipeIcon"
-		{
-			"ControlName"	"CTFImagePanel"
-			"fieldName"		"PipeIcon"
-			"visible"		"0"
-			"enabled"		"0"
-		}
-
-		"NumPipesLabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"NumPipesLabel"
-			"xpos"			"10"
-			"ypos"			"33"
-			"zpos"			"2"
-			"wide"			"100"
-			"tall"			"20"
-			"autoResize"	"1"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"%activepipes%"
-			"textAlignment"	"center"
-			"font"			"SSProSmall"
-		}
-		"NumPipesLabelDropshadow"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"NumPipesLabelDropshadow"
-			"xpos"			"10"
-			"ypos"			"34"
-			"zpos"			"2"
-			"wide"			"102"
-			"tall"			"21"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"%activepipes%"
-			"textAlignment"	"center"
-			"font"			"SSProSmall"
-			"fgcolor"		"black"
-		}			
-	}				
+		"visible"		"0"
+		"enabled"		"0"
+	}
 }

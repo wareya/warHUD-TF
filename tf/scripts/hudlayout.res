@@ -17,6 +17,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	"c"
+		"xpos_minmode"	"c-50"
 		"ypos"	"r95"
 		"wide"	"300"
 		"tall"	"110"
@@ -43,10 +44,10 @@
 		"wide"	"200"
 		"tall"	"60"
 		
-		"blue_active_xpos"			"16"
+		"blue_active_xpos"			"25"
 		"blue_active_xpos_minmode"	"55"
 	
-		"red_active_xpos"			"106"
+		"red_active_xpos"			"125"
 		"red_active_xpos_minmode"	"105"
 	}	
 

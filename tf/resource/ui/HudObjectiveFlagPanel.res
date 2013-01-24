@@ -18,6 +18,36 @@
 		}
 	}
 	
+	"LeftSideBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"LeftSideBG"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+		
+	"RightSideBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"RightSideBG"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+		
+	"OutlineBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"OutlineBG"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+	
 	"BlueScore"
 	{
 		"ControlName"	"CExLabel"
@@ -27,6 +57,8 @@
 		"zpos"			"8"
 		"wide"			"50"
 		"tall"			"34"
+		"xpos_minmode"	"c-81"
+		"ypos_minmode"	"r31"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"west"	
@@ -57,6 +89,8 @@
 		"zpos"			"7"
 		"wide"			"50"
 		"tall"			"37"
+		"xpos_minmode"	"c-80"
+		"ypos_minmode"	"r31"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"west"	
@@ -78,6 +112,8 @@
 		"zpos"			"8"
 		"wide"			"50"
 		"tall"			"34"
+		"xpos_minmode"	"c30"
+		"ypos_minmode"	"r31"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"east"
@@ -99,6 +135,8 @@
 		"zpos"			"7"
 		"wide"			"50"
 		"tall"			"37"
+		"xpos_minmode"	"c31"
+		"ypos_minmode"	"r31"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"east"
@@ -110,7 +148,7 @@
 		"if_mvm" {"visible"	"0"}
 		"if_specialdelivery" {"visible"	"0"}
 	}	
-															
+	
 	"OutlineImage"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -131,8 +169,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"CarriedImage"
 		"xpos"			"c-25"
-		"ypos"			"r70"	[$WIN32]
-		"ypos"			"r158"	[$X360]
+		"ypos"			"r70"
 		"zpos"			"10"
 		"wide"			"50"
 		"tall"			"50"
@@ -154,6 +191,8 @@
 		"zpos"			"4"
 		"wide"			"140"
 		"tall"			"30"
+		"xpos_minmode"	"c-50"
+		"wide_minmode"	"100"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_PlayingTo"
@@ -178,6 +217,8 @@
 		"zpos"			"3"
 		"wide"			"150"
 		"tall"			"14"
+		"xpos_minmode"	"c-55"
+		"wide_minmode"	"110"
 		"visible"		"0"
 		"enabled"		"0"
 		"fillcolor"		"TransparentLightBlack"
@@ -208,11 +249,8 @@
 			"ypos"		"r100"
 		}
 		"if_hybrid_single" {"xpos"		"c-80"}
-		
-		"if_hybrid_double" {"xpos"		"c-115"}
-
+		"if_hybrid_double" {"xpos"		"c-45"}
 		"if_specialdelivery" {"ypos"		"r100"}
-		
 		"if_no_flags" {"visible"	"0"}
 	}
 			
