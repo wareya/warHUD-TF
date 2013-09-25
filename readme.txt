@@ -3,8 +3,8 @@ Its main design goal show things as bluntly yet mellow as possible. That is, thi
 
 Install:
 
-Rename your resource and scripts folders before installing.
-Copy the contents of tf/ into your own tf/ directory.
+This repository is out of date. Use the archive here: https://dl.dropboxusercontent.com/u/1811521/warhud%20a5.7z
+Extract the warhud directory to common/tf/custom/.
 If you have an HUD crosshair already you should know what to do to move it over to this HUD.
 
 
