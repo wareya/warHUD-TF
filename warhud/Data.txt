@@ -1,0 +1,8 @@
+name=warHUD
+desc=Alternative HUD made by wareya
+creator=wareya
+steamid=76561198009358827
+url=https://github.com/wareya/warhud-tf
+url=http://steamcommunity.com/groups/warHUD
+url=http://teamfortress.tv/forum/thread/4426-warhud
+version=a5

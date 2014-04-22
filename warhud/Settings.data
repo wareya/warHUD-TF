@@ -1,0 +1,14 @@
+ApiVersion=1.0
+
+Window();
+
+[Border:0]
+Banner("warhud.png", 125, zoom); 
+
+[Portion:2]
+[Name:HealthFont, Default:"Kreon"]
+DynamicFileSwitcher("resource\ui\HudPlayerHealth.res", "Health Font", 1);
+
+[Portion:2]
+[Name:AmmoFont, Default:"Kreon"]
+DynamicFileSwitcher("resource\ui\HudAmmoWeapons.res", "Ammo Font", 1);

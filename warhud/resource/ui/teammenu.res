@@ -1,0 +1,577 @@
+"Resource/UI/TeamMenu.res"
+{
+	"team"
+	{
+		"ControlName"	"Frame"
+		"fieldName"		"team"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+	}
+
+	"SysMenu"
+	{
+		"ControlName"	"Menu"
+		"fieldName"		"SysMenu"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+
+	"MapInfo"
+	{
+		"ControlName"	"HTML"
+		"fieldName"		"MapInfo"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+
+	"mapname"
+	{
+		"ControlName"	"Label"
+		"fieldName"		"mapname"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+	
+	"teambutton0"
+	{
+		"ControlName"	"CTFTeamButton"
+		"fieldName"		"teambutton0"
+		"xpos"			"c-50"
+		"ypos"			"200"
+		"zpos"			"3"
+		"wide"			"50"
+		"tall"			"50"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"3"
+		"labelText"		"&3"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"paintborder"	"0"
+		"command"		"jointeam blue"
+		"team"				"3"		// team blue
+		"associated_model"	"bluebutton"
+		"hover"				""
+		"font"			"TFFontSmall"
+		"alpha"         "0"
+	}
+	
+	"BluText"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"BluText"
+		"xpos"			"c-50"
+		"ypos"			"200"
+		"zpos"			"3"
+		"wide"			"50"
+		"tall"			"50"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"3"
+		"labelText"		"BLU"	[$WIN32]
+		"textAlignment"	"center"
+		"font"			"rxpSmall"
+		"fgcolor"		"255 255 255 255"
+	}
+
+	"teambutton1"
+	{
+		"ControlName"	"CTFTeamButton"
+		"fieldName"		"teambutton1"
+		"xpos"			"c"
+		"ypos"			"200"
+		"zpos"			"3"
+		"wide"			"50"
+		"tall"			"50"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"4"
+		"labelText"		"&4"	[$WIN32]
+		"labelText"		""		[$X360]
+		"textAlignment"	"left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"paintborder"	"0"
+		"command"		"jointeam red"
+		"team"				"2"		// team red
+		"associated_model"	"reddoor"	
+		"hover"				""
+		"font"			"TFFontSmall"
+		"alpha"         "0"
+	}
+	
+	"RedText"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"RedText"
+		"xpos"			"c"
+		"ypos"			"200"
+		"zpos"			"3"
+		"wide"			"50"
+		"tall"			"50"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"3"
+		"labelText"		"RED"	[$WIN32]
+		"textAlignment"	"center"
+		"font"			"rxpSmall"
+		"fgcolor"		"255 255 255 255"
+	}
+
+
+	"teambutton2"
+	{
+		"ControlName"	"CTFTeamButton"
+		"fieldName"		"teambutton2"
+		"xpos"			"c-50"
+		"ypos"			"180"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"1"
+		"labelText"		"&1"	[$WIN32]
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"paintborder"	"0"
+		"command"		"jointeam auto"
+		"associated_model"	"RandomFrame"
+		"font"			"TFFontSmall"
+		"alpha"         "0"
+	}
+	
+	"RandomText"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"RandomText"
+		"xpos"			"c-50"
+		"ypos"			"180"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"1"
+		"labelText"		"RANDOM"	[$WIN32]
+		"textAlignment"	"center"
+		"font"			"default"
+		"fgcolor"		"255 255 255 255"
+	}
+	
+	"teambutton3"
+	{
+		"ControlName"	"CTFTeamButton"
+		"fieldName"		"teambutton3"
+		"xpos"			"c-50"
+		"ypos"			"250"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"2"
+		"labelText"		"&2"	[$WIN32]
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"paintborder"	"0"
+		"command"		"jointeam spectate"
+		"associated_model"	"SpectateFrame"	
+		"font"			"TFFontSmall"
+		"alpha"         "0"
+	}
+	"SpecText"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"SpecText"
+		"xpos"			"c-50"
+		"ypos"			"250"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"2"
+		"labelText"		"SPECTATE"	[$WIN32]
+		"textAlignment"	"center"
+		"font"			"default"
+		"fgcolor"		"255 255 255 255"
+	}
+    
+	"teambutton4"
+	{
+		"ControlName"	"CTFTeamButton"
+		"fieldName"		"teambutton4"
+		"xpos"			"c-50"
+		"ypos"			"270"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"2"
+		"labelText"		"&0"	[$WIN32]
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"paintborder"	"0"
+		"command"		"vguicancel"
+		"associated_model"	"SpectateFrame"	
+		"font"			"TFFontSmall"
+		"alpha"         "0"
+	}
+	"CancelText"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CancelText"
+		"xpos"			"c-50"
+		"ypos"			"270"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"2"
+		"labelText"		"CANCEL"	[$WIN32]
+		"textAlignment"	"center"
+		"font"			"default"
+		"fgcolor"		"255 255 255 255"
+	}
+	
+	"CancelButton"
+	{
+		"ControlName"		"CExButton"
+		"fieldName"			"CancelButton"
+		"xpos"				"0"
+		"ypos"				"480"
+		"zpos"				"6"
+		"wide"				"100"
+		"tall"				"20"
+		"pinCorner"			"2"
+		"visible"			"0"
+		"enabled"			"0"
+		"labelText"			"Cancel"
+		"textAlignment"		"center"
+		"Command"			"cancelmenu"
+		"font"				"default"
+		"fgcolor_override" 	"200 80 60 255"
+	}
+	
+	"TeamMenuSelect"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TeamMenuSelect"
+		"xpos"			"30"
+		"xpos_lodef"			"52"
+		"xpos_hidef"			"72"
+		"ypos"			"r40"
+		"ypos_lodef"			"r60"
+		"ypos_hidef"			"r54"
+		"zpos"			"6"
+		"wide"			"0"
+		"tall"			""
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"visible_lodef"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_SelectATeam"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"MenuMainTitle"
+		"fgcolor"		"HudOffWhite"
+	}
+	
+	"TeamMenuAuto"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TeamMenuAuto"
+		"xpos"			"c20"
+		"xpos_lodef"			"c-255"
+		"xpos_hidef"			"c-260"
+		"ypos"			"c-36"
+		"zpos"			"2"
+		"wide"			"100" [$WIN32] 
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_Random"
+		"textAlignment"	"left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"wrap"			"0"
+		"font"			"default"
+		"fgcolor"		"White"
+	}
+	
+	"TeamMenuSpectate"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TeamMenuSpectate"
+		"xpos"			"c20"
+		"ypos"			"c-17"
+		"zpos"			"3"
+		"wide"			"100"
+		"wide_lodef"	"70"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_Spectate"
+		"textAlignment"	"left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"wrap"			"0"
+		"font"			"default"
+		"fgcolor"		"white"
+	}
+
+	"MenuBG"
+	{
+		"ControlName"	"CModelPanel"
+		"fieldName"		"MenuBG"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"		
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"fov"			"20"
+	}	
+	
+	"ShadedBar"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ShadedBar"
+		"xpos"			"0"
+		"ypos"			"r50"
+		"ypos_lodef"	"r74"
+		"ypos_hidef"	"r65"
+		"zpos"			"5"
+		"wide"			"0"
+		"tall"			"0"
+		"tall_lodef"	"74"
+		"tall_hidef"	"65"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"tabPosition"	"0"	
+		"fillcolor"		"0 0 0 0"
+		"PaintBackgroundType"	"0"
+	}		
+	
+	"Blueframe"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"Blueframe"
+		"xpos"			"c-50"
+		"ypos"			"200"
+		"zpos"			"1"		
+		"wide"			"50"
+		"tall"			"50"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"image"			"../hud/color_panel_blu"
+		"src_corner_height"	"23"
+		"src_corner_width"	"23"
+		
+		"draw_corner_width"	"0"
+		"draw_corner_height" 	"0"	
+
+	}
+	"BlueCount"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"BlueCount"
+		"xpos"			"c-50"
+		"xpos_lodef"	"230"
+		"ypos"			"225"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%bluecount%"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"1"
+		"font"			"default"
+		"fgcolor"		"White"
+	}		
+	
+	"Redframe"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"Redframe"		
+		"xpos"			"c"
+		"ypos"			"200"
+		"zpos"			"1"
+		"wide"			"50"
+		"tall"			"50"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"image"			"../hud/color_panel_red"
+		"src_corner_height"	"23"
+		"src_corner_width"	"23"
+		
+		"draw_corner_width"	"0"
+		"draw_corner_height" 	"0"	
+	}
+	"RedCount"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"RedCount"
+		"xpos"			"c"
+		"ypos"			"225"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%redcount%"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"1"
+		"font"			"default"
+		"fgcolor"		"White"
+	}	
+	
+	"BlueLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"BlueLabel"
+		"visible"		"0"
+		"enabled"		"0"
+	}		
+	
+	"RedLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"RedLabel"
+		"visible"		"0"
+		"enabled"		"0"
+	}	
+	"BluePlayersLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"BluePlayersLabel"
+		"visible"		"0"
+		"enabled"		"0"
+	}	
+	
+	"RedPlayersLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"RedPlayersLabel"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+	
+	"RandomFrame"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"RandomFrame"
+		"xpos"			"c-50"
+		"ypos"			"180"
+		"zpos"			"2"		
+		"wide"			"100"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"image"			"../hud/color_panel_brown"
+		"src_corner_height"	"23"
+		"src_corner_width"	"23"
+		
+		"draw_corner_width"	"0"
+		"draw_corner_height" 	"0"	
+	}		
+	
+	"SpectateFrame"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"SpectateFrame"
+		"xpos"			"c-50"
+		"ypos"			"250"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"image"			"../hud/color_panel_brown"
+		"src_corner_height"	"23"
+		"src_corner_width"	"23"
+		
+		"draw_corner_width"	"0"
+		"draw_corner_height" 	"0"	
+	}		
+	"CancelFrame"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"CancelFrame"
+		"xpos"			"c-50"
+		"ypos"			"270"
+		"zpos"			"3"
+		"wide"			"100"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"image"			"../hud/color_panel_brown"
+		"src_corner_height"	"23"
+		"src_corner_width"	"23"
+		
+		"draw_corner_width"	"0"
+		"draw_corner_height" 	"0"	
+	}			
+}
+
