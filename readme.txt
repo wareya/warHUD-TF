@@ -20,6 +20,6 @@ About:
 http://teamfortress.tv/forum/thread/4426-warhud
 
 I missed RevanXP's HUD and get so frustrated when I play without it that I decided to make my own version of it from scratch.
-I don't have anything but the most important ingame elements done right now so don't expect custom class or team select menus (yet; they're the next thing I want to do).
+I only have the most important elements right now. While this is a full release and completely playable, it is still buggy and doesn't change every last element.
 Should be compatible with everything 5:4 and wider. Haven't tested MvM thoroughly on 5:4.
 
