@@ -23,3 +23,4 @@ I missed RevanXP's HUD and get so frustrated when I play without it that I decid
 I only have the most important elements right now. While this is a full release and completely playable, it is still buggy and doesn't change every last element.
 Should be compatible with everything 5:4 and wider. Haven't tested MvM thoroughly on 5:4.
 
+Known bugs: https://github.com/wareya/warHUD-TF/issues
