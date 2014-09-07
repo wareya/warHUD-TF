@@ -2352,6 +2352,17 @@ Scheme
 		//
 		
 		// Fonts for warHUD
+        //dmgind
+		"DamageFont"
+		{
+			"1"
+			{
+				"name"		"Kreon"
+				"tall"		"28"
+				"antialias" "1"
+				"outline"	"0"
+			}
+		}
         // Kreon
 		"HealthAmmoFont"
 		{
