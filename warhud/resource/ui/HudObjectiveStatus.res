@@ -27,7 +27,7 @@
 			"fieldName"		"TimePanelValue"
 			"font"			"SSProMini"
 			"fgcolor"		"TanLight"
-			"xpos"			"39"
+			"xpos"			"40"
 			"ypos"			"2"
 			"zpos"			"3"
 			"wide"			"30"
