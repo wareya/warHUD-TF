@@ -5,10 +5,10 @@
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"BlueTimer"
 		"xpos"				"0"
-		"ypos"				"0"
+		"ypos"				"-50"
 		"zpos"				"2"
 		"wide"				"200"
-		"tall"				"50"
+		"tall"				"100"
 		"visible"			"1"
 		"enabled"			"1"
 		"PositiveColor"			"0 255 0 255"
@@ -24,7 +24,7 @@
 			"font_lodef"	"HudFontMedium"
 			"fgcolor"		"TanLight"
 			"xpos"			"55"
-			"ypos"			"-5"
+			"ypos"			"46"
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"31"
@@ -39,10 +39,10 @@
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"RedTimer"
 		"xpos"				"0"
-		"ypos"				"0"
+		"ypos"				"-50"
 		"zpos"				"2"
 		"wide"				"200"
-		"tall"				"50"
+		"tall"				"100"
 		"visible"			"1"
 		"enabled"			"1"
 		"PositiveColor"			"0 255 0 255"
@@ -58,7 +58,7 @@
 			"font_lodef"	"HudFontMedium"
 			"fgcolor"		"TanLight"
 			"xpos"			"105"
-			"ypos"			"-5"
+			"ypos"			"46"
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"31"
@@ -69,6 +69,20 @@
 		}	
 	}
 	
+	"BlueBGB"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"BlueBGB"
+		"xpos"				"55" // 100-20-20-5
+		"ypos"				"0"
+		"zpos"				"2"
+		"wide"				"40"
+		"tall"				"21"
+		"visible"			"1"
+		"enabled"			"1"
+		"image"				"replay/thumbnails/blacktrans"	
+		"scaleImage"		"1"	
+	}
 	"BlueBG"
 	{
 		"ControlName"		"ImagePanel"
@@ -98,6 +112,20 @@
 		"scaleImage"		"1"	
 	}
 	
+	"RedBGB"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"RedBGB"
+		"xpos"				"105" // 100-20+20+5
+		"ypos"				"0"
+		"zpos"				"2"
+		"wide"				"40"
+		"tall"				"21"
+		"visible"			"1"
+		"enabled"			"1"
+		"image"				"replay/thumbnails/blacktrans"	
+		"scaleImage"		"1"	
+	}
 	"RedBG"
 	{
 		"ControlName"		"ImagePanel"
