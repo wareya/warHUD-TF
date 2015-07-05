@@ -908,7 +908,7 @@
 	{
 		"ControlName"	"CTFPlayerModelPanel"
 		"fieldName"		"TFPlayerModel"
-		"xpos"			"0"`
+		"xpos"			"0"
 		"ypos"			"500" // off-screen
 		"visible"		"0"
 		"enabled"		"0"

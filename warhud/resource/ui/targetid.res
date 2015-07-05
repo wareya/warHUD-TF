@@ -214,4 +214,20 @@
 			"brighttext"	"0"
 		}
 	}
+	"AvatarImage"
+	{
+		"ControlName"	"CAvatarImagePanel"
+		"fieldName"		"AvatarImage"
+		"xpos"			"6"
+		"xpos_minmode"	"0"
+		"ypos"			"6"
+		"zpos"			"99"
+		"wide"			"11"
+		"tall"			"11"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			""
+		"scaleImage"	"1"	
+		"color_outline"	"52 48 45 255"
+	}
 }

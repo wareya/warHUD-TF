@@ -59,10 +59,10 @@
 	{
 		"ControlName"	"Label"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"18"
+		"xpos"			"16"
 		"ypos"			"-1"
 		"zpos"			"5"
-		"wide"			"14"
+		"wide"			"15"
 		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"

@@ -5,12 +5,8 @@
 		"ControlName"	    "CTFClientScoreBoardDialog"
 		"fieldName"		    "scoreinfo"
 		"xpos"			    "c-300"
-		"xpos_lodef"	    "34"
-		"xpos_hidef"	    "4"
 		"ypos"			    "31"
 		"wide"			    "600"
-		"wide_lodef"	    "560"
-		"wide_hidef"	    "620"
 		"tall"			    "448"
 		"autoResize"	    "0"
 		"pinCorner"		    "0"
@@ -53,29 +49,6 @@
 			"visible"		"0"
 		}
 	}
-	"MainBG"
-	{
-		"ControlName"	    "ImagePanel"
-		"fieldName"		    "MainBG"
-		"xpos"			    "0"
-		"ypos"			    "60"
-		"zpos"			    "-1"
-		"wide"			    "600"
-		"tall"			    "388"
-		"visible"		    "1"
-		"enabled"		    "1"
-		"border"		    "TFThinLineBorderBlack"
-		"bgcolor"           "Black"
-		"fgcolor"           "Black"
-		"bgcolor_override"  "Black"
-		"fgcolor_override"  "Black"
-        
-		if_mvm
-		{
-			"ypos"			"0"
-			"tall"			"448"
-		}
-	}
 	"RedScoreBG"
 	{
 		"ControlName"	    "ImagePanel"
@@ -100,7 +73,30 @@
 		{
 			"visible"		"0"
 		}
-	}					
+	}	
+	"MainBG"
+	{
+		"ControlName"	    "ImagePanel"
+		"fieldName"		    "MainBG"
+		"xpos"			    "0"
+		"ypos"			    "60"
+		"zpos"			    "-1"
+		"wide"			    "600"
+		"tall"			    "388"
+		"visible"		    "1"
+		"enabled"		    "1"
+		"border"		    "TFThinLineBorderBlack"
+		"bgcolor"           "Black"
+		"fgcolor"           "Black"
+		"bgcolor_override"  "Black"
+		"fgcolor_override"  "Black"
+        
+		if_mvm
+		{
+			"ypos"			"0"
+			"tall"			"448"
+		}
+	}				
 	"BlueTeamLabel"
 	{
 		"ControlName"		"CExLabel"
@@ -316,8 +312,7 @@
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
-		"visible"		"0"	[$X360]
+		"visible"		"1"
 		"enabled"		"1"
 		
 		if_mvm
@@ -407,15 +402,11 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
-		"xpos"			"299"
-		"xpos_lodef"	"279"
-		"xpos_hidef"	"309"
+		"xpos"			"300"
 		"ypos"			"70"
 		"zpos"			"2"
-		"wide"			"2"
+		"wide"			"1"
 		"tall"			"292"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -548,7 +539,30 @@
 		{
 			"visible"		"1"
 		}
-	}							
+	}	
+    "MapName"
+    {
+        "ControlName"	"CExLabel"
+        "fieldName"		"mapname"
+        "font"			"ScoreboardMedium"
+        "labelText"		"%mapname%"
+        "textAlignment"	"east"
+        "xpos"			"415"
+        "ypos"			"375"
+        "zpos"			"3"
+        "wide"			"165"
+        "tall"			"20"
+        "autoResize"	"0"
+        "pinCorner"		"0"
+        "visible"		"1"
+        "enabled"		"1"
+        "fgcolor"		"236 227 203 255"
+
+        if_mvm
+        {
+            "visible"		"0"
+        }
+    }						
 	"HorizontalLine"
 	{
 		"ControlName"		"ImagePanel"
@@ -577,28 +591,10 @@
 	}
 	"PlayerScoreLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerScoreLabel"
-		"font"		"ScoreboardMedium"
-		"labelText"		"%playerscore%"
-		"textAlignment"	"east"
-		"xpos"			"440"
-		"xpos_lodef"	"399"
-		"xpos_hidef"	"439"
-		"ypos"			"377"	[$WIN32]
-		"ypos"			"302"	[$X360]
-		"zpos"			"3"
-		"wide"			"140"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		
-		if_mvm
-		{
-			"visible"		"0"
-		}
+		"visible"		"0"
+		"enabled"		"0"
 	}
 
 	"LocalPlayerDuelStatsPanel"
@@ -933,47 +929,12 @@
 			"visible"		"1"
 			"enabled"		"1"
 		}
-        "MapName"
-        {
-            "ControlName"	"CExLabel"
-            "fieldName"		"mapname"
-            "font"			"ScoreboardMedium"
-            "labelText"		"%mapname%"
-            "textAlignment"	"east"
-            "xpos"			"415"
-            "ypos"			"375"
-            "zpos"			"3"
-            "wide"			"165"
-            "tall"			"20"
-            "autoResize"	"0"
-            "pinCorner"		"0"
-            "visible"		"1"
-            "enabled"		"1"
-            "fgcolor"		"236 227 203 255"
-
-            if_mvm
-            {
-                "visible"		"0"
-            }
-        }
 		"GameType"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"gametype"
-			"font"			"ScoreboardVerySmall"
-			"labelText"		"%gametype%"
-			"textAlignment"	"east"
-			"xpos"			"435"
-			"xpos_lodef"	"105"
-			"ypos"			"32"
-			"zpos"			"3"
-			"wide"			"145"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor"		"185 177 153 255"
+			"visible"		"0"
+			"enabled"		"0"
 		}							
 		"Assists"
 		{

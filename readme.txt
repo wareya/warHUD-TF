@@ -1,4 +1,3 @@
-#This HUD is currently being overhauled. This means that obscure parts of it might not work properly until the overhaul is finished. Only maintainence is being done (e.g. fixing critical HUD elements after major updates).#
 
 warHUD is a custom HUD modification for TF2, based on the legacy of RevanXP's HUD.
 Its main design goal show things as bluntly yet mellow as possible. That is, things should be obvious and easy to look for, but never annoy your attention.
