@@ -16,6 +16,10 @@ Custom crosshairs:
 
 Not included. You'll have to add any HUD crosshairs you want yourself. There are many guides for doing so, so don't worry. It's very easy.
 
+Copying:
+
+You can use and distribute WarHUD under the same conditions as Valve gives to owners of TF2 over TF2's original HUD files. Basically, if you can do it with the vanilla HUD, you can do it with WarHUD. This does not include external resources, such as the fonts. Those have separate licenses.
+
 About:
 
 http://teamfortress.tv/forum/thread/4426-warhud
